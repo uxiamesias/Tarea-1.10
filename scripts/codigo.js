@@ -3,9 +3,9 @@ let myImage = document.querySelector('img');
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
   if (mySrc === 'images/twitter-logo-3'){
-    myImage.setAttribute ('src','https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-3.png');
+    myImage.setAttribute ('src', 'https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-3.png');
   } else {
-    myImage.setAttribute ('src', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.logodownload.org%2Ftwitter-logo%2F&psig=AOvVaw0Lj7i8-ZFUQnsUtsMOZtRb&ust=1641749630858000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjOlo7YovUCFQAAAAAdAAAAABAD');
+    myImage.setAttribute ('src', 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png');
   }
 }
 

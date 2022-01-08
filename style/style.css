@@ -28,3 +28,8 @@ body{
   padding: 0px 20px 20px 20px;
   border: 5px solid #00aae4;
 }
+
+img{
+  display: block;
+  margin: 0 auto;
+}

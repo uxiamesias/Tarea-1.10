@@ -1,3 +1,14 @@
+let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if (mySrc === 'images/twitter-logo-3'){
+    myImage.setAttribute ('src','https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-3.png');
+  } else {
+    myImage.setAttribute ('src', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.logodownload.org%2Ftwitter-logo%2F&psig=AOvVaw0Lj7i8-ZFUQnsUtsMOZtRb&ust=1641749630858000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjOlo7YovUCFQAAAAAdAAAAABAD');
+  }
+}
+
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
@@ -18,15 +29,4 @@ if(! localStorage.getItem('name')){
 }
 myButton.onclick = function(){
   setUserName();
-}
-
-let myImage = document.querySelector('img');
-
-myImage.onclick = function() {
-  let mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/twitter-logo-3'){
-    myImage.setAttribute ('src','images/twitter-logo-3');
-  } else {
-    myImage.setAttribute ('src', 'images/twitter');
-  }
 }

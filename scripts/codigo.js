@@ -2,7 +2,7 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/twitter-logo-3'){
+  if (mySrc === 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png'){
     myImage.setAttribute ('src', 'https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-3.png');
   } else {
     myImage.setAttribute ('src', 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png');

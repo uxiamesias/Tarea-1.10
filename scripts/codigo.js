@@ -30,3 +30,27 @@ if(! localStorage.getItem('name')){
 myButton.onclick = function(){
   setUserName();
 }
+
+var xPos = 0;
+var yPos = 107;
+var cDot= 120;
+ 
+var dot= ellipse(10,10,10,10);
+var x=0;
+
+var parabola= function(x,c){
+    return Math.pow(x, 2)/400 - x + c;
+    
+};
+
+draw= function() {
+    fill(17, 21, 56,20);
+    rect(-1,-1,401,401);
+    if(xPos>400){
+        cDot= random(191,200);
+        xPos=-50;
+    
+    }
+    xPos += 2;
+    image(dot, xPos, parabola (xPos,cDot),50,70);
+};

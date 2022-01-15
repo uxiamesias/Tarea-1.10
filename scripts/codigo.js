@@ -1,6 +1,6 @@
-let myImage = document.fetElementById('twitter-logo-3');
+let myImage = document.getElementById('twitter-logo-3');
 
-myImage.onclick = function() {
+myImage.onclick = function () {
   let mySrc = myImage.getAttribute('src');
   if (mySrc === 'https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-3.png'){
     myImage.setAttribute ('src', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3ATwitter_logo.svg&psig=AOvVaw0Lj7i8-ZFUQnsUtsMOZtRb&ust=1641749630858000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjOlo7YovUCFQAAAAAdAAAAABAd');

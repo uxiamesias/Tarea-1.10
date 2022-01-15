@@ -42,7 +42,7 @@ onload = function startAnimation () {
   var div = document.getElementById("bird")
   setInterval(function() {
     var frameOffset = (++frame % frame)* -frameHeight;
-    div.style.backgroundPosition = "1px" + frameOffset + "2px";
+    div.style.backgroundPosition = "0px" + frameOffset + "px";
   },100);
 };
 

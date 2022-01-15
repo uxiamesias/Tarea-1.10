@@ -35,16 +35,16 @@ myButton.onclick = function(){
 
 //
 
-var catEl = document.getElementById("cat");
+var birdEl = document.getElementById("bird");
   
   var startTime = new Date().getTime();
-  var walkTheCat = function() {
+  var walkTheBird = function() {
       var currTime = new Date().getTime();
       var secondsElapsed = ((currTime - startTime)/1000);
       var newLeft = secondsElapsed * 50;
-      catEl.style.left = newLeft+ "px";
-      window.requestAnimationFrame (walkTheCat);
+      birdEl.style.left = newLeft+ "px";
+      window.requestAnimationFrame (walkTheBird);
   };
   
-  walkTheCat();
+  walkTheBird();
 

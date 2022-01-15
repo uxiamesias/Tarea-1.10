@@ -35,16 +35,14 @@ myButton.onclick = function(){
 
 //
 
-var birdEl = document.getElementById("bird");
-  
-  var startTime = new Date().getTime();
-  var walkTheBird = function() {
-      var currTime = new Date().getTime();
-      var secondsElapsed = ((currTime - startTime)/1000);
-      var newLeft = secondsElapsed * 50;
-      birdEl.style.left = newLeft+ "px";
-      window.requestAnimationFrame (walkTheBird);
-  };
-  
-  walkTheBird();
+onload = function startAnimation () {
+  var frameHeight = 102;
+  var frames = 15;
+  var frame = 0;
+  var div = document.getElementById('bird')
+  setInterval(function() {
+    var frameOffset = (++frame % frame)* -frameHeight;
+    div.style.backgroundPosition = '1px' + frameOffset + '2px';
+  },100);
+};
 

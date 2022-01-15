@@ -9,6 +9,8 @@ myImage.onclick = function () {
   }
 }
 
+//
+
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
@@ -30,4 +32,19 @@ if(! localStorage.getItem('name')){
 myButton.onclick = function(){
   setUserName();
 }
+
+//
+
+var catEl = document.getElementById("cat");
+  
+  var startTime = new Date().getTime();
+  var walkTheCat = function() {
+      var currTime = new Date().getTime();
+      var secondsElapsed = ((currTime - startTime)/1000);
+      var newLeft = secondsElapsed * 50;
+      catEl.style.left = newLeft+ "px";
+      window.requestAnimationFrame (walkTheCat);
+  };
+  
+  walkTheCat();
 

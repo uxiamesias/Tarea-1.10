@@ -29,11 +29,6 @@ body{
   border: 5px solid #00aae4;
 }
 
-img{
-  display: block;
-  margin: 0 auto;
-}
-
  #bird {
   position: absolute;
   left: 0px;

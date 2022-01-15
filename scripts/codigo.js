@@ -9,7 +9,6 @@ myImage.onclick = function () {
   }
 }
 
-//
 
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
@@ -33,7 +32,7 @@ myButton.onclick = function(){
   setUserName();
 }
 
-//
+
 
 onload = function startAnimation () {
   var frameHeight = 102;

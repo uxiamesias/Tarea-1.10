@@ -33,3 +33,8 @@ img{
   display: block;
   margin: 0 auto;
 }
+
+ #cat {
+  position: absolute;
+  left: 0px;
+}
